@@ -4,7 +4,7 @@ public class TwoSumChallenge {
 
     public static void main(String[] args) {
 
-        int[] nums = {2,7,11,15};
+        int[] nums = {1, 12, 3, 7, 11, 15};
         int target = 26;
 
         int[] result = twoSums(nums, target);
@@ -14,8 +14,6 @@ public class TwoSumChallenge {
         } else {
             System.out.println("No solution found.");
         }
-
-
     }
 
 
@@ -26,7 +24,7 @@ public class TwoSumChallenge {
             for (int j = i + 1; j < nums.length; j++) {
 
                 if (nums[i] + nums[j] == target) {
-                    return new int[]{i, j};
+                    return new int[] { i, j };
                 }
                 System.out.println(" "+nums[i]+" "+nums[j]);
             }
