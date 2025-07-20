@@ -16,7 +16,7 @@ public class ReverseStringChallenge {
         System.out.println("#######  Approach 2 #####");
         // Approach 2
         for(int i = str.length() - 1; i >= 0; i--) {
-            System.out.println(str.charAt(i));
+            System.out.print("Reversed String : "+str.charAt(i));
         }
         System.out.println("######  Approach 3 ######");
         // Approach 3
@@ -30,7 +30,6 @@ public class ReverseStringChallenge {
         System.out.println(sb1.reverse());
 
         System.out.println("######  Approach 5 ######");
-
         // Approach 5
         String rev = "";
         for(int i = str.length() - 1; i >= 0; i--) {

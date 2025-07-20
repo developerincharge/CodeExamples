@@ -22,10 +22,11 @@ public class CountStringDemo {
             System.out.println(name.length()+" -> "+name);
         });
 
+        System.out.println("#########################");
 
-
-
-
+        for (String name : names) {
+            System.out.println(name + " -> " + name.length());
+        }
 
     }
 

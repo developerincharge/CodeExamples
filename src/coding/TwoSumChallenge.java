@@ -7,6 +7,7 @@ public class TwoSumChallenge {
         int[] nums = {1, 12, 3, 7, 11, 15};
         int target = 26;
 
+
         int[] result = twoSums(nums, target);
 
         if (result.length == 2) {
