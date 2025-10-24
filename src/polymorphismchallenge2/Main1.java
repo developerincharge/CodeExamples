@@ -21,5 +21,10 @@ public class Main1 {
         System.out.println(holden.startEngine());
         System.out.println(holden.accelerate());
         System.out.println(holden.brake());
+
+        Tesla tesla = new Tesla(6, "Model X");
+        System.out.println(tesla.startEngine());
+        System.out.println(tesla.accelerate());
+        System.out.println(tesla.brake());
     }
 }
