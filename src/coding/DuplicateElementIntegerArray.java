@@ -24,6 +24,5 @@ public class DuplicateElementIntegerArray {
                   list.add(a[i]);
               }
           }
-
     }
 }

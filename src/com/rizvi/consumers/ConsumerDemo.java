@@ -45,8 +45,8 @@ import java.util.*;
 
         public static void increasePriceForProductMap(Map<Integer, ? extends Product> idProductMap,
                                                       double priceToIncrease) {
-            idProductMap.forEach( (id, product) -> product.setPrice(product.getPrice()
+            idProductMap.forEach((id, product) -> product.setPrice(product.getPrice()
                     + priceToIncrease));
-        }
 
+        }
     }
