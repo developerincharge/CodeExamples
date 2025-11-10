@@ -13,7 +13,7 @@ public class ReverseEachWord {
           String[] words = str.split(" ");
           StringBuilder sb = new StringBuilder();
           for (String word : words) {
-              sb.append(new StringBuilder(word).reverse().toString() + " ");
+              sb.append(new StringBuilder(word).reverse() + " ");
           }
           System.out.println("Reversed String: "+sb.toString().trim());
 

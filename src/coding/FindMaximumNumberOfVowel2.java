@@ -13,8 +13,7 @@ public class FindMaximumNumberOfVowel2 {
                 .collect(Collectors.groupingBy(
                         word -> word.chars()
                                 .filter(ch -> vowels.indexOf(ch) >= 0)
-                                .count()
-                ));
+                                .count()));
 
         long maxVowels = vowelCountMap.keySet().stream()
                 .max(Long::compareTo)

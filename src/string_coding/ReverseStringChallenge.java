@@ -27,11 +27,11 @@ public class ReverseStringChallenge {
         System.out.println(sb.reverse());
 
         System.out.println("######  Approach 4  ######");
-
         // Approach 4
         StringBuilder sb1 = new StringBuilder(str);
         System.out.println(sb1.reverse());
 
+        System.out.println();
         System.out.println("######  Approach 5 ######");
         // Approach 5
         String rev = "";

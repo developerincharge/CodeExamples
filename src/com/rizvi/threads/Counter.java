@@ -25,11 +25,11 @@ public class Counter {
 
       // Synchronized method on Block
 
-    /*    public void increment() {
-        synchronized (this) {
-            count++;
-        }
-    }*/
+//        public void increment() {
+//        synchronized (this) {
+//            count++;
+//        }
+//    }
 
     // Explicit Lock with ReentrantLock
     //More advanced control than synchronized.

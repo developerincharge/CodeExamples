@@ -8,7 +8,7 @@ class HaiThread extends Thread{
 
     public void run(){
 
-        System.out.println("Run Method in HaiThread");
+        System.out.println("Run Method in HaiThread in Thread-0\n");
         for(int i =0; i <= 10; i++){
             System.out.println(Thread.currentThread().getName() +
                     " Under the Thread Group of " +
@@ -32,7 +32,7 @@ class HelloThread implements Runnable{
     }
 
     public void run() {
-        System.out.println("Run Method in HelloThread");
+        System.out.println("Run Method in HelloThread in Thread-1\n");
         for(int i =0; i <= 10; i++){
             System.out.println(Thread.currentThread().getName() +
                     " Under the Thread Group of " +

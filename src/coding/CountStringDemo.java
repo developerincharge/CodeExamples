@@ -23,13 +23,10 @@ public class CountStringDemo {
             System.out.println(newValue + " -> " + name.length());
         });
 
-
     }
 
     public static String countLength(String name) {
         return name;
     }
-
-
 
 }

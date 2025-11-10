@@ -19,7 +19,7 @@ public class ReverseNumber {
 //            rev = rev * 10 + digit;
 //            num = num / 10;
 //        }
-
+      //  Integer.parseInt(new StringBuilder(String.valueOf(num)).reverse().toString());
 
         // using StringBuffer class
 
@@ -45,11 +45,12 @@ public class ReverseNumber {
 
         // Stream API
 
-        int rev = Integer.parseInt(new StringBuilder(String.valueOf(num)).reverse().toString());
+       int rev = Integer.parseInt(new StringBuilder(String.valueOf(num)).reverse().toString());
 
 
 
-        System.out.println("Reversed number: " + rev);
+       System.out.println("Reversed number: "+  rev);
+
 
     }
 
