@@ -9,6 +9,7 @@ public class ReplaceCharacterOccurrenceInString {
         char charToReplace = 'S';
 
         System.out.println("###############");
+        System.out.println(str);
         char charToReplaceWith = 's';
         StringBuilder sb = new StringBuilder(str);
         for (int i = 0; i < str.length(); i++) {

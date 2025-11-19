@@ -17,11 +17,11 @@ public class SortIntegerArray {
                }
            }
         }
-
         System.out.println(Arrays.toString(a));
 
-        System.out.println("############");
         // Approach 2  using sort()
+        System.out.println("############");
+
         Arrays.sort(a);
         System.out.println(Arrays.toString(a));
     }

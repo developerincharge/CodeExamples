@@ -5,9 +5,10 @@ import java.util.Map;
 
 public class TwoSumIntegerDemo {
 
+
     public static void main(String[] args) {
         // Input array of numbers
-        int[] nums = {2, 7, 11, 15};
+        int[] nums = {2, 3, 7, 9, 11, 15};
 
         // Target sum
         int target = 26;
@@ -22,7 +23,6 @@ public class TwoSumIntegerDemo {
             System.out.println("No solution found.");
         }
     }
-
     /**
      * Finds the indices of two numbers in the array that add up to the target.
      *
@@ -30,6 +30,8 @@ public class TwoSumIntegerDemo {
      * @param target The target sum.
      * @return An array containing the indices of the two numbers, or an empty array if no solution is found.
      */
+
+
     // Method to find the indices of two numbers in the array that add up to the target
     private static int[] twoSums(int[] nums, int target) {
         // Create a HashMap to store the difference between the target and each number, along with its index

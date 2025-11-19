@@ -10,7 +10,6 @@ public class ReverseString {
         System.out.println("Enter a string to reverse: \n");
         String str = scanner.nextLine();
 
-
         // By using character array
         char[] charArray = str.toCharArray();  // convert string  into character array
         int length = charArray.length;
