@@ -10,9 +10,9 @@ public class RemoveDuplicateCharacter {
 
         String str = "programming";
         StringBuilder sb1 = new StringBuilder();
-        //str.chars().distinct().forEach(sb::append);
-        //str.chars().distinct().forEach(c -> sb.deleteCharAt(sb.indexOf(String.valueOf((char) c))));
-        str.chars().distinct().forEach(c -> sb1.append((char) c));
+        //str.chars().distinct().forEach(sb1::append);
+        str.chars().distinct().forEach(c -> sb1.indexOf(String.valueOf((char) c)));
+        //str.chars().distinct().forEach(c -> sb1.append((char) c));
         System.out.println(sb1);
 
 

@@ -1,5 +1,6 @@
 package coding;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class ReverseString {
@@ -13,37 +14,44 @@ public class ReverseString {
         // By using character array
         char[] charArray = str.toCharArray();  // convert string  into character array
         int length = charArray.length;
-         reverseString(charArray, length);
-        System.out.print("Reversed string: " + new String(charArray));
-       // System.out.println("Reversed string: " + Arrays.toString(charArray));
-
-      }
 
 
-        public static void reverseString(char[] charArray, int length) {
+//        reverseString(charArray, length);
 
-        // Using recursive approach
-
-        if(length > 0){
-            System.out.println(charArray[length -1]);
-            length--;
-            // recursive calling method
-            reverseString(charArray, length);
-        }
-
-        // Using algorithm
-
-//        for (int i = 0; i < length / 2; i++) {
-//            char temp = charArray[i];
-//            charArray[i] = charArray[length - i - 1];
-//            charArray[length - i - 1] = temp;
+        System.out.print("String to Perform reverse: " + new String(charArray));
+        System.out.println("\nOriginal character array: " + Arrays.toString(charArray));
+//
+//      }
+//        public static void reverseString(char[] charArray, int length) {
+//
+//        // Using recursive approach
+//        if(length > 0){
+//            System.out.print(charArray[length -1]+"");
+//            length--;
+//            // recursive calling method
+//            reverseString(charArray, length);
 //        }
 
-            // Using StringBuilder class
+
+        // Using legacy algorithm approach
+
+        for (int i = 0; i < length / 2; i++) {
+            char temp = charArray[i];
+            charArray[i] = charArray[length - i - 1];
+            charArray[length - i - 1] = temp;
+        }
+
+        String reversedString = new String(charArray);
+        System.out.println("Reversed string: " + reversedString);
+
+
+            // Using StringBuilder class approach
            // String str;
 //        StringBuilder sb = new StringBuilder();
 //        StringBuilder rev = sb.reverse();
-        //System.out.println("Reversed string: " + rev);
+//        System.out.println("Reversed string: " + rev);
 
+
+        System.out.println("Reversed character array: " + Arrays.toString(charArray));
     }
 }

@@ -5,8 +5,8 @@ import java.util.stream.IntStream;
 
 public class MergingTwoIntArrays {
     public static void main(String[] args) {
-        int [] a = {1, 2, 3};
-        int [] b = {4, 5, 6};
+        int [] a = {1, 2, 3, 4, 5, 6, 7};
+        int [] b = {4, 5, 6, 7, 8, 9, 10};
 
         // declare a new int array
         int [] c = new int[a.length + b.length];  //  this is now  3 + 3 = 6
@@ -20,7 +20,9 @@ public class MergingTwoIntArrays {
         System.out.println(Arrays.toString(c));
 
         // merge the tow array using IntStream
-        int [] d = IntStream.concat(Arrays.stream(a), Arrays.stream(b)).toArray();
+        int [] d = IntStream.concat(Arrays.stream(a), Arrays.stream(b))
+                .distinct()
+                .toArray();
         System.out.println(Arrays.toString(d));
     }
 }

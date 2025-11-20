@@ -22,7 +22,6 @@ public class CountStringDemo {
             resultList.add(newValue);
             System.out.println(newValue + " -> " + name.length());
         });
-
     }
 
     public static String countLength(String name) {
