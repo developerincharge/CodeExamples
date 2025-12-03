@@ -35,7 +35,7 @@ class ThreadA4 extends Thread{
 	}
 }
 class JTC{
-	public static void main(String args[]){
+	public static void main(String [] args) {
 		A a1 = new A();
 		Thread1 t1 = new Thread1(a1);
 		Thread2 t2 = new Thread2(a1);

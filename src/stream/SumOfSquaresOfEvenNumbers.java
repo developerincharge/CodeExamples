@@ -6,7 +6,6 @@ import java.util.List;
 public class SumOfSquaresOfEvenNumbers {
 
 
-
     public static void main(String[] args) {
        // Examples of combining filter + map + reduce in a single stream pipeline
         System.out.println("Squares and sum of even numbers by combining filter + map + reduce in a single stream ");
