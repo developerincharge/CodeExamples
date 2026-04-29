@@ -5,7 +5,8 @@ import java.util.Map;
 
 public class FirstNonRepeatedCharacterInString {
     public static void main(String[] args) {
-        String str = "AABCDBECF";
+        String str = "AABCJBECFD";
+         // Approach 1
 
         char[] chars = str.toCharArray();
         for (char ch : chars) {
@@ -52,7 +53,7 @@ public class FirstNonRepeatedCharacterInString {
 
         for(Map.Entry<Character, Integer> entry : map.entrySet()) {
             if(entry.getValue() == 1) {
-                System.out.println(entry.getKey());
+               // System.out.println(entry.getKey());
                 break;
             }
         }

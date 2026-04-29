@@ -20,6 +20,5 @@ public class GenericDataTypeDemo {
         System.out.println("String Array:  ");
         printArray(strArray);
 
-
     }
 }

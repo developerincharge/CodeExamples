@@ -66,5 +66,6 @@ public class MemoryManagement {
         personObj2.age = 50;
         System.out.println("Modified personObj2 age to 50");
         System.out.println("personObj2: " + personObj2);
+
     }
 }

@@ -24,5 +24,6 @@ public class MergingTwoIntArrays {
                 .distinct()
                 .toArray();
         System.out.println(Arrays.toString(d));
+
     }
 }

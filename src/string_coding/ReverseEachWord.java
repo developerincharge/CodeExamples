@@ -4,9 +4,9 @@ public class ReverseEachWord {
     public static void main(String[] args) {
 
 
-          String str = "hello world Java code";
+          String str = "hello world Java programming";
 
-        System.out.println("Original String: " + str);
+        System.out.println("Original line  with  spaces:  " + str);
 
           // Approach 1
 
@@ -15,7 +15,7 @@ public class ReverseEachWord {
           for (String word : words) {
               sb.append(new StringBuilder(word).reverse() + " ");
           }
-          System.out.println("Reversed String: "+sb.toString().trim());
+          System.out.println("Reversed String with Approach 1: "+sb.toString().trim());
 
 
           // Approach 2
@@ -25,7 +25,7 @@ public class ReverseEachWord {
           for (int i = words1.length-1; i >= 0; i--) {
               sb1.append(words1[i] + " ");
           }
-          System.out.println("Reversed String: "+sb1.toString().trim());
+          System.out.println("Reversed String with Approach 2: "+sb1.toString().trim());
 
 
           // Approach 3
@@ -40,7 +40,7 @@ public class ReverseEachWord {
               }
               reversedString = reversedString + revWords + " ";
              }
-            System.out.println("Reversed String: "+reversedString);
+            System.out.println("Reversed String with Approach 3: "+reversedString);
 
 
 

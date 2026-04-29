@@ -44,5 +44,7 @@ public class EncapsulationDemo {
         person.setAge(30);
         System.out.println("Updated Age: " +person.getAge());
 
+        person.setAge(-5);
+         System.out.println("Age after invalid update: " +person.getAge());
     }
 }

@@ -5,8 +5,6 @@ import java.util.function.Function;
 
 public class FunctionsDemoCollections {
 
-
-
     private static final double DISCOUNT_RATE = 0.05;
 
     public static void main(String[] args) {
@@ -32,7 +30,8 @@ public class FunctionsDemoCollections {
         System.out.println("========== Compose Functions type demo ==========");
         Map<Product, Double> productDiscountMap = new HashMap<>();
 
-        List<Product> products = new ArrayList<>(Arrays.asList(new Product(1, 199.99),
+        List<Product> products = new ArrayList<>(Arrays.asList(
+                new Product(1, 199.99),
                 new Product(2, 79.99),
                 new Product(3, 49.99)));
 

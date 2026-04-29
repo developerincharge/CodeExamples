@@ -20,7 +20,6 @@ public class FindMaximumNumberOfVowel1 {
                                 .filter(ch -> vowels.indexOf(ch) >= 0)
                                 .count()
                 ));
-
         // Find the maximum vowel count
         Optional<Long> maxVowelCount = wordsByVowelCount.keySet()
                 .stream()
@@ -31,7 +30,6 @@ public class FindMaximumNumberOfVowel1 {
                 .map(count -> wordsByVowelCount.get(count).stream()
                         .collect(Collectors.joining(",")))
                 .orElse("");
-
         System.out.println(result);
     }
 }

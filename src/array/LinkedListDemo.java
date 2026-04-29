@@ -17,7 +17,7 @@ public class LinkedListDemo {
 
         System.out.println("First Person Name : "+ names.getFirst());
         System.out.println("Last Person Name : "+ names.getLast());
-        System.out.println("Skip First Person: "+ Arrays.toString(names.stream().skip(1).toArray()));
+        System.out.println("Skip First Person: "+ Arrays.toString(names.stream().skip(2).toArray()));
         System.out.println("Skip Last Person: "+ Arrays.toString(names.stream().limit(2).toArray()));
 
     }

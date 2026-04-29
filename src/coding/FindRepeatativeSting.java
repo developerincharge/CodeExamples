@@ -7,7 +7,7 @@ public class FindRepeatativeSting {
 
     public static void main(String[] args) {
 
-        String str = "abcdeabcretgabcdpolasabcd";
+        String str = "abcdeabcretgabcdefgpolasabcdefg";
         String longestRepetitiveSubstring = findLongestRepetitiveSubstring(str);
         List<Integer> indices = findAllOccurrences(str, longestRepetitiveSubstring);
         System.out.println("Longest repetitive substring: " + longestRepetitiveSubstring);

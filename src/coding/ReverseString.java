@@ -32,7 +32,6 @@ public class ReverseString {
 //            reverseString(charArray, length);
 //        }
 
-
         // Using legacy algorithm approach
 
         for (int i = 0; i < length / 2; i++) {

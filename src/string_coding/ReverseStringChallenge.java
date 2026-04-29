@@ -2,16 +2,16 @@ package string_coding;
 
 import java.util.stream.Stream;
 
-public class ReverseStringChallenge {
+public class  ReverseStringChallenge {
 
     public static void main(String[] args) {
 
         String str = "hello world";
         System.out.println("#######  Approach 1 #####");
        //  Approach 1
-        char[] chArr = str.toCharArray();
-        for (int i = chArr.length - 1; i >= 0; i--) {
-            System.out.print(chArr[i]);
+        char[] arr = str.toCharArray();
+        for (int i = arr.length - 1; i >= 0; i--) {
+            System.out.print(arr[i]);
 
         }
         System.out.println();
@@ -31,7 +31,7 @@ public class ReverseStringChallenge {
 //        StringBuilder sb1 = new StringBuilder(str);
 //        System.out.println(sb1.reverse());
         String reversedStr = new StringBuilder(str).reverse().toString();
-        System.out.println("Original String: " + str);
+       // System.out.println("Original String: " + str);
         System.out.println("Reversed using StringBuilder and Stream API(approach 4):  " + reversedStr);
 
         System.out.println();
@@ -39,13 +39,13 @@ public class ReverseStringChallenge {
         // Approach 5
         String rev = "";
         for(int i = str.length() - 1; i >= 0; i--) {
-            rev +=  str.charAt(i);
+            rev = rev + str.charAt(i);
         }
         System.out.println(rev);
 
         System.out.println("######  Approach 6  ######");
 
-        // Approach 6
+        // Approach 6 using stream api
         Stream<String > revStream = Stream.of(str.split("")).reduce((s1, s2) -> s2 + s1).get().lines();
         revStream.forEach(System.out::println);
 
@@ -54,7 +54,7 @@ public class ReverseStringChallenge {
         String reversedStrStream = str.chars()
                 .mapToObj(c -> (char) c)
                 .reduce("", (s, c) -> c + s, (s1, s2) -> s2 + s1);
-        System.out.println("Reversed String using Stream API(approach 7): " + reversedStrStream);
+        System.out.println("Reversed String using Stream API: " + reversedStrStream);
 
 
         System.out.println("######  Approach 8  ######");
@@ -62,7 +62,7 @@ public class ReverseStringChallenge {
         String reversedStrStream2 = str.chars()
                 .mapToObj(c -> String.valueOf((char) c))
                 .reduce("", (s1, s2) -> s2 + s1);
-        System.out.println("Reversed String using Stream API (approach 8): " + reversedStrStream2);
+        System.out.println("Reversed String using Stream API: " + reversedStrStream2);
 
 
 

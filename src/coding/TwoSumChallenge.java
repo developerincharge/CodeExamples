@@ -6,9 +6,11 @@ public class TwoSumChallenge {
 
         // Input array of numbers
         int[] nums = {2, 3, 7, 9, 11, 15};
-
-        // Target sum
+//
+//        // Target sum
         int target = 26;
+//        int[] nums = {2, 7, 11, 15};
+//        int target = 9;
 
         // Call the twoSums method to find the indices of the two numbers
         int[] result = twoSums(nums, target);

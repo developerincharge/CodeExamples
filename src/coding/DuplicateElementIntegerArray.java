@@ -6,7 +6,7 @@ public class DuplicateElementIntegerArray {
 
     public static void main(String[] args) {
 
-        int [] a = {5, 4, 2 , 3, 2, 1, 4, 5, 3};
+        int [] a = {5, 4, 3, 6, 5, 3, 2 , 4, 2, 1, 7, 8, 9, 1};
 
 //          for( int i = 0; i < a.length; i++ ){
 //              for( int j = i+ 1;  j < a.length; j++){

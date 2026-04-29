@@ -23,8 +23,10 @@ class Circle extends Shape{
 public class AbstractClassDemo {
 
     public static void main(String[] args) {
+
         Shape circle = new Circle(5);
 
         circle.calculateArea();
+
     }
 }

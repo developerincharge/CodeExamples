@@ -45,14 +45,17 @@ public class TwoSumIntegerDemo {
             // Check if the complement is already in the map
             if (numToIndexMap.containsKey(complement)) {
                 // If found, return the current index and the index of the complement
-                return new int[]{numToIndexMap.get(complement), i};
+                return new int[]{
+                        numToIndexMap.get(complement), i
+                };
             }
 
             // If the complement is not found, add the current number and its index to the map
             numToIndexMap.put(nums[i], i);
         }
         // If no solution is found, return an empty array
-        return new int[0];
+        //return new int[0];
+        return new int[]{};
     }
 
 }

@@ -18,6 +18,8 @@ public class StreamDemo {
         String substring2 = text.substring(5);
         System.out.println("Substring fro index 5:  "+substring2);
 
+         String replacedText = text.replace("a", "@");
+         System.out.println("Replaced Text : "+replacedText);
 
 
     }

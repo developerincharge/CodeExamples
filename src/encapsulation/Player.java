@@ -6,9 +6,9 @@ public class Player {
    private int healthPercentage;
    private String weapon;
 
-//    public Player() {
-//    }
+    public Player() {
 
+    }
 
     public Player(String name) {
         this(name, 100, "sword");
@@ -25,8 +25,6 @@ public class Player {
         }
         this.weapon = weapon;
     }
-
-
 
     public void loseHealth(int damage){
         healthPercentage = healthPercentage - damage;
@@ -46,6 +44,39 @@ public class Player {
         }
     }
 
+     public String getName() {
+        return name;
+    }
+
+     public void setName(String name) {
+        this.name = name;
+    }
+
+     public int getHealthPercentage() {
+        return healthPercentage;
+    }
+
+     public void setHealthPercentage(int healthPercentage) {
+        this.healthPercentage = healthPercentage;
+    }
+
+     public String getWeapon() {
+        return weapon;
+    }
+
+     public void setWeapon(String weapon) {
+        this.weapon = weapon;
+    }
+
+     @Override
+    public String toString() {
+        return "Player{" +
+                "name='" + name + '\'' +
+                ", healthPercentage=" + healthPercentage +
+                ", weapon='" + weapon + '\'' +
+                '}';
+    }
 }
+
 
 
